@@ -1,0 +1,346 @@
+{
+	"info": {
+		"_postman_id": "b55d6700-f9f8-42ef-9b4f-f03a8d5b9166",
+		"name": "MizuhoPrices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16655059"
+	},
+	"item": [
+		{
+			"name": "getPricesByVendorMIZUHO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/instrumentprice/vendors/MIZUHO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"instrumentprice",
+						"vendors",
+						"MIZUHO"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPricesByVendorHSBC",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/instrumentprice/vendors/HSBC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"instrumentprice",
+						"vendors",
+						"HSBC"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPricesByVendorCITI",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/instrumentprice/vendors/CITI",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"instrumentprice",
+						"vendors",
+						"CITI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPricesByInstrumentSNP500",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/instrumentprice/instruments/SNP500",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"instrumentprice",
+						"instruments",
+						"SNP500"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPricesByInstrumentNVDA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/instrumentprice/instruments/NVDA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"instrumentprice",
+						"instruments",
+						"NVDA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPricesByInstrumentEUROSTOXX",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/instrumentprice/instruments/EUROSTOXX",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"instrumentprice",
+						"instruments",
+						"EUROSTOXX"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPrice-MIZUHO-EUROSTOXX",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vendorName\": \"MIZUHO\",\r\n    \"instrumentName\": \"EUROSTOXX\",\r\n    \"price\": 420,\r\n    \"timestamp\": {{$timestamp}}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/instrumentprice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"instrumentprice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPrice-HSBC-EUROSTOXX",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vendorName\": \"HSBC\",\r\n    \"instrumentName\": \"EUROSTOXX\",\r\n    \"price\": 424,\r\n    \"timestamp\": {{$timestamp}}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/instrumentprice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"instrumentprice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPrice-MIZUHO-NVDA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vendorName\": \"MIZUHO\",\r\n    \"instrumentName\": \"NVDA\",\r\n    \"price\": 598,\r\n    \"timestamp\": {{$timestamp}}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/instrumentprice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"instrumentprice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPricesByVendorMIZUHO Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/instrumentprice/vendors/MIZUHO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"instrumentprice",
+						"vendors",
+						"MIZUHO"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPricesByVendorHSBC Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/instrumentprice/vendors/HSBC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"instrumentprice",
+						"vendors",
+						"HSBC"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPricesByVendorCITI Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/instrumentprice/vendors/CITI",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"instrumentprice",
+						"vendors",
+						"CITI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPricesByInstrumentSNP500 Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/instrumentprice/instruments/SNP500",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"instrumentprice",
+						"instruments",
+						"SNP500"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPricesByInstrumentNVDA Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/instrumentprice/instruments/NVDA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"instrumentprice",
+						"instruments",
+						"NVDA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPricesByInstrumentEUROSTOXX Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/instrumentprice/instruments/EUROSTOXX",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"instrumentprice",
+						"instruments",
+						"EUROSTOXX"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
